@@ -232,8 +232,7 @@ bool Club::hasFreeTable() const {
 }
 
 bool Club::isValidClientName(const std::string& name) const {
-    return !name.empty() &&
-           std::all_of(name.begin(), name.end(), [](char c) {
-               return consts::ClientsNameAlphabet.find(c) != std::string::npos;
-           });
+    return !name.empty() && std::all_of(name.begin(), name.end(), [](char c) {
+        return consts::ClientsNameAlphabet.find(c) != std::string::npos;
+    });
 }
