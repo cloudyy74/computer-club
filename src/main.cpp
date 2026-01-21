@@ -51,7 +51,7 @@ int main(int argc, char* argv[]) {
         try {
             club.processIncomingEvent(e);
         } catch (std::exception& e) {
-            std::cout << line;
+            std::cout << line << std::endl;
             return 1;
         }
     }
